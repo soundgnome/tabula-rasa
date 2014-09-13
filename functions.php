@@ -1,35 +1,27 @@
 <?php
-// Negate censorship
-foreach (array('the_content', 'the_title', 'comment_text' ) as $filter)
-  if ( $priority = has_filter($filter, 'capital_P_dangit') )
-    remove_filter($filter, 'capital_P_dangit', $priority);
+define('FALLBACK_CONTENT_WIDTH', 960);
 
-// Set up dynamic menu and sidebar
-function register_theme_bits() {
-
-  if (function_exists('register_nav_menu')) {
-    add_theme_support('menus');
-    register_nav_menu('nav', 'Main Navigation');
-  }
-
-  if (function_exists('register_sidebar')) register_sidebar();
-
-}
-add_action('init', 'register_theme_bits');
-
-// Usually wanted
+add_theme_support('automatic-feed-links');
+//add_theme_support('custom-background');
+//add_theme_support('custom-header');
+add_theme_support('html5');
+add_theme_support('menus');
+//add_theme_support('post-formats');
 add_theme_support('post-thumbnails');
 
-/* Shortcode Template
-http://codex.wordpress.org/Shortcode_API
+// remove superfluous content filter
+foreach (array('the_content', 'the_title', 'comment_text' ) as $filter)
+    if ( $priority = has_filter($filter, 'capital_P_dangit') )
+        remove_filter($filter, 'capital_P_dangit', $priority);
 
-function foo_shortcode($atts, $content=null, $code='') {
-  extract(shortcode_atts(array(
-                               'bar' => 'default value'
-                               ), $atts));
-  return $bar;
+function rasa_init() {
+
+    register_nav_menu('nav', 'Main Navigation');
+    register_sidebar();
+
+    if (!isset($content_width)) {
+        $content_width = FALLBACK_CONTENT_WIDTH;
+    }
+
 }
-add_shortcode('foo', 'foo_shortcode');
-*/
-
-?>
+add_action('init', 'rasa_init');

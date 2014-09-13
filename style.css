@@ -1,11 +1,12 @@
 /**
    Theme Name: Tabula Rasa
-   Version 0.2
+   Version 0.3
    Author: Terran Olson
    Author URI: http://webtech.halfcadence.net
+   Theme URI: https://github.com/soundgnome/tabula-rasa
    License: GPL v3
    License URI: http://www.gnu.org/licenses/gpl.html
-   Tags: wordpress 3, starter theme, custom menu, widgets
+   Tags: custom-menu
 
    Description: Streamlined WordPress starter theme for those who prefer to build from the ground up. Only a handful of CSS rules are active, with stubs provided for fast development.
 */
@@ -31,8 +32,6 @@ header {}
 #nav {}
 main {}
 .posts {}
-.one-post {}
-.post-wrapper {}
 .post-title {}
 .by-line {}
 .post-content {}
@@ -50,13 +49,17 @@ footer {}
 
 /* WP STUBS (see also http://codex.wordpress.org/CSS) */
 /*
+.alignnone {}
+.bypostauthor
 .categories {}
 .cat-item {}
 .current-cat {}
 .current-cat-parent {}
 .children {}
+.gallery-caption {}
 .pagenav {}
 .page_item {}
+.post {}
 .current_page_item {}
 .current_page_parent {}
 .current_page_ancestor {}
@@ -64,12 +67,20 @@ footer {}
 .widget_text {}
 .blogroll {}
 .linkcat {}
+.sticky {}
 .wp-caption {}
 .wp-caption-text {}
-.alignnone {}
 */
 
-/* COMMON PRACTICE */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
 .aligncenter {
   display: block;
   margin-left: auto;
