@@ -1,0 +1,89 @@
+/**
+   Theme Name: Tabula Rasa
+   Version 0.2
+   Author: Terran Olson
+   Author URI: http://webtech.halfcadence.net
+   License: GPL v3
+   License URI: http://www.gnu.org/licenses/gpl.html
+   Tags: wordpress 3, starter theme, custom menu, widgets
+
+   Description: Streamlined WordPress starter theme for those who prefer to build from the ground up. Only a handful of CSS rules are active, with stubs provided for fast development.
+*/
+
+/* HTML ELEMENT STUBS */
+/*
+body {}
+h1 {}
+h2 {}
+h3, h4 {}
+p {}
+img {}
+a {}
+a:hover {}
+*/
+
+/* TABULA RASA STUBS */
+/*
+#container {}
+header {}
+#site-name {}
+#site-description {}
+#nav {}
+main {}
+.posts {}
+.one-post {}
+.post-wrapper {}
+.post-title {}
+.by-line {}
+.post-content {}
+.post-meta {}
+.comments {}
+.comments-link {}
+.comments-login {}
+.comments-title {}
+.comments-nav {}
+#sidebar {}
+.sidebar {}
+.sidebar-widgets {}
+footer {}
+*/
+
+/* WP STUBS (see also http://codex.wordpress.org/CSS) */
+/*
+.categories {}
+.cat-item {}
+.current-cat {}
+.current-cat-parent {}
+.children {}
+.pagenav {}
+.page_item {}
+.current_page_item {}
+.current_page_parent {}
+.current_page_ancestor {}
+.widget {}
+.widget_text {}
+.blogroll {}
+.linkcat {}
+.wp-caption {}
+.wp-caption-text {}
+.alignnone {}
+*/
+
+/* COMMON PRACTICE */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
