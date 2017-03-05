@@ -3,7 +3,7 @@
 
 <?php elseif (have_comments()): ?>
 <div class="comments">
-<h3 class="comments-title">Comments</h3>
+<h3 class="comments-title"><?php echo __('Comments', 'tabula-rasa'); ?></h3>
 
 <ul class="comments-list">
 <?php wp_list_comments(); ?>

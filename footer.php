@@ -1,6 +1,6 @@
 </main>
 
-<aside id="sidebar" class="sidebar">
+<aside class="sidebar">
     <?php get_sidebar(); ?>
 </aside>
 

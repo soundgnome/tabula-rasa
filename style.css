@@ -1,14 +1,14 @@
 /**
-   Theme Name: Tabula Rasa
-   Theme URI: https://github.com/soundgnome/tabula-rasa
-   Version: 0.3
-   Author: Terran Olson
-   Author URI: http://webtech.halfcadence.net
-   License: GPL v3
-   License URI: http://www.gnu.org/licenses/gpl.html
-   Tags: custom-menu
-
-   Description: Streamlined WordPress starter theme for those who prefer to build from the ground up. Only a handful of CSS rules are active, with stubs provided for fast development.
+Theme Name: Tabula Rasa
+Theme URI: https://github.com/soundgnome/tabula-rasa
+Version: 0.4
+Author: Terran Olson
+Author URI: http://webtech.halfcadence.net
+License: GPL v3
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: custom-menu
+Text Domain: tabula-rasa
+Description: Streamlined WordPress starter theme for those who prefer to build from the ground up. Only a handful of CSS rules are active, with stubs provided for fast development.
 */
 
 /* HTML ELEMENT STUBS */
@@ -41,7 +41,6 @@ main {}
 .comments-login {}
 .comments-title {}
 .comments-nav {}
-#sidebar {}
 .sidebar {}
 .sidebar-widgets {}
 footer {}
@@ -50,7 +49,7 @@ footer {}
 /* WP STUBS (see also http://codex.wordpress.org/CSS) */
 /*
 .alignnone {}
-.bypostauthor
+.bypostauthor {}
 .categories {}
 .cat-item {}
 .current-cat {}
@@ -67,6 +66,8 @@ footer {}
 .widget_text {}
 .blogroll {}
 .linkcat {}
+.screen-reader-text {}
+.screen-reader-text:focus {}
 .sticky {}
 .wp-caption {}
 .wp-caption-text {}
